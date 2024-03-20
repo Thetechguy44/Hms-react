@@ -9,6 +9,7 @@ import Department from './pages/Department';
 import Contact from './pages/Contact';
 import Department_Details from './pages/Department-details';
 import Service_Details from './pages/Service-details';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/contact" element={<Contact/>}/>
               <Route path="/department_details" element={<Department_Details/>}/>
               <Route path="/service_details" element={<Service_Details/>}/>
+              <Route path="*" element={<ErrorPage/>}/>
             </Routes>
           <Footer />
       </div>

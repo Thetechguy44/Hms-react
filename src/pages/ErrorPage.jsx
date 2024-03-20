@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Breadcrumb = (props) => {
+const ErrorPage = () => {
     return (
         <div>
             {/* breadcrumb-area */}
@@ -13,15 +13,15 @@ const Breadcrumb = (props) => {
                         <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                             <div className="breadcrumb-wrap text-center">
                                 <div className="breadcrumb-title mb-30">
-                                    <h2>{props.title}</h2>
+                                    <h2>404 ERROR</h2>
                                 </div>
                                 <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb">
                                         <li className="breadcrumb-item">
-                                            <Link to="/">Home</Link>
+                                            <Link to="/">Back</Link>
                                         </li>
                                         <li className="breadcrumb-item active" aria-current="page">
-                                            {props.name}
+                                            <Link to="/">Home</Link>
                                         </li>
                                     </ol>
                                 </nav>
@@ -35,4 +35,4 @@ const Breadcrumb = (props) => {
     );
 }
 
-export default Breadcrumb;
+export default ErrorPage;

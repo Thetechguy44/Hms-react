@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <footer className="footer-bg footer-p">
@@ -87,34 +89,29 @@ const Footer = () => {
                                 <div className="footer-link">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <Link to="/">
                                                 <i className="fas fa-chevron-right" /> Home
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="/about">
                                                 <i className="fas fa-chevron-right" /> About Us
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="/services">
                                                 <i className="fas fa-chevron-right" /> Services
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i className="fas fa-chevron-right" /> Project
-                                            </a>
+                                            <Link to="/departments">
+                                                <i className="fas fa-chevron-right" /> Department
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i className="fas fa-chevron-right" /> Our Team
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fas fa-chevron-right" /> Latest Blog
-                                            </a>
+                                            <Link to="/contact">
+                                                <i className="fas fa-chevron-right" /> Contact Us
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
